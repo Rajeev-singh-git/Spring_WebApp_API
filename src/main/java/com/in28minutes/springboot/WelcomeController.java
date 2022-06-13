@@ -1,9 +1,10 @@
 package com.in28minutes.springboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.in28minutes.service.WelcomeService;
+
 
 @RestController //Creates Rest controller
 public class WelcomeController {
@@ -17,13 +18,5 @@ public class WelcomeController {
 	}
 	
    
-	
-	@Component //creates instance of the class (beans)
-	class WelcomeService{
-		public String retrieveWelcomeMessage() {
-			// Business logic, complex methods are written in service
-			return "Good Morning!";
-		}
-	}
 
 }
