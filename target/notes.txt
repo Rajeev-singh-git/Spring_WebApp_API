@@ -1,0 +1,23 @@
+Step 2
+
+ComponentScan defines where it should look for component
+ Service class is outside com.in28minutes.springboot package so it 
+ won't be scanned automatically. So we need to add ComponentScan
+ annotation telling  SpringBoot where to look for component.
+ It is inside sub-package of ("com.in28minutes") so we added that.
+ 
+ @SpringBootApplication adds @ComponentScan by default to current 
+ package which in our case is (com.in28minutes.springboot;)
+ 
+
+
+
+Step 4
+
+Spring Boot manages version for all it's dependencies automatically.
+If we upgrade spring boot version, it will automatically upgrade
+version of all it's  dependencies.
+We can see details in "Spring Boot Starter Parent"
+We can also, override dependency version in POM.XML properties. 
+In our code we have overridden java version to 13.
+
