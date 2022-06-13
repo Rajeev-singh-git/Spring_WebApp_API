@@ -20,7 +20,7 @@ public class Application {
  Service class is outside com.in28minutes.springboot package so it 
  won't be scanned automatically. So we need to add ComponentScan
  annotation telling  SpringBoot where to look for component.
- It is inside subpackage of ("com.in28minutes") so we added that.
+ It is inside sub-package of ("com.in28minutes") so we added that.
  
  @SpringBootApplication adds @ComponentScan by default to current 
  package which in our case is (com.in28minutes.springboot;)
