@@ -99,3 +99,15 @@ POST   - Create a new resource          "/surveys/{surveyId}/questions"
 PUT    - Update an existing resource    "/surveys/{surveyId}/questions/{questionId}"
 PATCH  - Update part of a resource     
 DELETE - Delete a resource             "/surveys/{surveyId}/questions/{questionId}"
+
+
+
+Step 9
+    I hate the fact that I've to stop and start the server each time. Can somebody save me?
+	Yeah. Spring Boot Developer Tools
+	By default, any entry on the classpath that points to a folder will be monitored for changes.
+	These will not trigger restart - /META-INF/maven, /META-INF/resources ,/resources ,/static ,/public or /templates
+	Folders can be configured : spring.devtools.restart.exclude=static/,public/
+	Additional Paths : spring.devtools.restart.additional-paths
+	LiveReload http://livereload.com/extensions/
+	Technology in progress!! So, expect a few problems!

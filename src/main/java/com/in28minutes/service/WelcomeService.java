@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public	class WelcomeService{
 		public String retrieveWelcomeMessage() {
 			// Business logic, complex methods are written in service
-			return "Good Morning!";
+			return "Good Morning! Have a wonderful day";
 		}
 }
