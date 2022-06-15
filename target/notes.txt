@@ -127,3 +127,19 @@ Step 10
             "China"
             ]
 	}
+	
+
+Step 11
+
+   Understand Content Negotiation
+     We in postman, can customize in which format data we want
+     For JSON springboot automatically   converts and send ..but for other we need dependencies
+     We will add dependency for XML format
+    Content Negotiation is clent asking  server data in specific format
+   Accept:application/xml
+   In postman
+   Key : Accept
+   Value : application/xml
+   Deliver XML Responses from the REST Services
+   http://localhost:8080/surveys/Survey1/questions/
+   

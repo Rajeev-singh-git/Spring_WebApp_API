@@ -24,7 +24,11 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
      </dependency>	
-  </dependencies>
+     <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+      </dependency>
+   </dependencies>
   
   <build>
 		<plugins>
