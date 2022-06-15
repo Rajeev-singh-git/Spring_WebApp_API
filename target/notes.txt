@@ -150,9 +150,20 @@ Step 13:
    HAL BROWSER IS A UI where we can browse through all the services like postman
    Spring boot Actuator exposes all beans, metadata, configuration
    Link = http://localhost:8080/actuator/
+   HAL browser : http://localhost:8080
    Add dependency of Actuator and HAL and use this.
    
 
+Steps 14 :
 
-   
-   
+  Spring boot support 3 different embedded servlet container
+  Tomcat (Default)
+  Jetty
+  undertow
+  
+  We can also change default port 8080 by any of our choice in application.properties
+     server.port
+  In this step we have switched to Jetty server from tomcat. It's working same   
+  Changed port to 8181 from 8080
+  Exclusion basically says "I don't want this".
+      
