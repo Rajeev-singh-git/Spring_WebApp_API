@@ -111,3 +111,19 @@ Step 9
 	Additional Paths : spring.devtools.restart.additional-paths
 	LiveReload http://livereload.com/extensions/
 	Technology in progress!! So, expect a few problems!
+	
+
+Step 10
+
+	PostMapping URL = http://localhost:8080/surveys/Survey1/questions
+	
+	Format =
+	{
+    "description":"IT hub of the world",
+     "correctAnswer":"India",
+     "options":["India",
+            "Russia",
+            "United States",
+            "China"
+            ]
+	}
