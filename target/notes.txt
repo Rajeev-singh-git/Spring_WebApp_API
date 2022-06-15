@@ -80,6 +80,22 @@ What Spring Boot is NOT?
  
  
  
- Step 6
+ Step 7
  
+Even though data is not in JSON Format, how it is displayed in JSON format in browser?
 
+Spring Boot does this for us automatically using "Message Converter"
+
+List<Question> Object -> JSON
+JSON -> Object
+Jackson data Bind
+
+
+
+Step 8
+
+GET    - Retrieve details of a resource "/surveys/{surveyId}/questions"
+POST   - Create a new resource          "/surveys/{surveyId}/questions"
+PUT    - Update an existing resource    "/surveys/{surveyId}/questions/{questionId}"
+PATCH  - Update part of a resource     
+DELETE - Delete a resource             "/surveys/{surveyId}/questions/{questionId}"
