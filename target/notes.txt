@@ -179,4 +179,5 @@ so program argument will be picked
    To Run from program argument 
    Run Configuration -> Argument -> --welcome.message="Welcome message from property argument"
    Run
- 
+ Added Placeholder, Removed program arguments, Added YAML property file
+ YAML property file is more readable compared to application.properties
