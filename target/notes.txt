@@ -166,4 +166,17 @@ Steps 14 :
   In this step we have switched to Jetty server from tomcat. It's working same   
   Changed port to 8181 from 8080
   Exclusion basically says "I don't want this".
-      
+ 
+ 
+ Step 15:
+ 
+ Sending welcome message from application.properties
+ Sending welcome message from program arguments
+ 
+program argument has higher priority than application.properties 
+so program argument will be picked
+ 
+   To Run from program argument 
+   Run Configuration -> Argument -> --welcome.message="Welcome message from property argument"
+   Run
+ 
