@@ -190,3 +190,14 @@ so program argument will be picked
     In application.properties add "spring.profiles.active=prod"
     Create file "application-prod.properties"
     File with name "application-prod.properties" will be given priority 
+    
+Giving priority to "prod" profile from argument level
+  Run Configuration -> Argument -> VM Arguments --> -Dspring.profiles.active=prod
+  
+  
+Create a dummy bean in application.java
+   bean will be created for current profile.
+   But if we add "@Profile("dev")" annotation above the bean, it will only be created only 
+   for  prod environment.
+   
+  
