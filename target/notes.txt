@@ -181,3 +181,12 @@ so program argument will be picked
    Run
  Added Placeholder, Removed program arguments, Added YAML property file
  YAML property file is more readable compared to application.properties
+ 
+ 
+ 
+ Step 16:
+ 
+ Created profile
+    In application.properties add "spring.profiles.active=prod"
+    Create file "application-prod.properties"
+    File with name "application-prod.properties" will be given priority 
