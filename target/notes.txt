@@ -217,4 +217,5 @@ Step 19
  Step 20: Spring Boot Starter : Introduction to Spring Data Rest
  
    Url = http://localhost:8080/users/
+    http://localhost:8080/users/search/findByRole?role=Admin
   
