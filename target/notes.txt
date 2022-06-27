@@ -212,4 +212,9 @@ Step 19
    Look at H2 Console : http://localhost:8080/h2-console
    Use db url jdbc:h2:mem:testdb
    Add findByRole method  
+   
+   
+ Step 20: Spring Boot Starter : Introduction to Spring Data Rest
+ 
+   Url = http://localhost:8080/users/
   
