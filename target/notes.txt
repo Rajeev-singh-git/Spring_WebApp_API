@@ -200,4 +200,9 @@ Create a dummy bean in application.java
    But if we add "@Profile("dev")" annotation above the bean, it will only be created only 
    for  prod environment.
    
+   
+   
+   Step 18
+    
+     JPA = Java Persistent API (Helps to map an object to database) 
   
