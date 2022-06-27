@@ -202,7 +202,14 @@ Create a dummy bean in application.java
    
    
    
-   Step 18
+Step 18
     
-     JPA = Java Persistent API (Helps to map an object to database) 
+     JPA = Java Persistent API (Helps to map an object to database)
+     
+     
+Step 19
+
+   Look at H2 Console : http://localhost:8080/h2-console
+   Use db url jdbc:h2:mem:testdb
+   Add findByRole method  
   
