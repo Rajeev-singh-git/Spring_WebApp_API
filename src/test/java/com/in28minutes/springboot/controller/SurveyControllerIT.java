@@ -19,6 +19,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.in28minutes.springboot.Application;
+import com.in28minutes.springboot.model.Question;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -51,6 +52,35 @@ public class SurveyControllerIT {
     } 
 
     //Response : {"id":"Question1","description":"Largest Country in the World","correctAnswer":"Russia","options":["India","Russia","United States","China"]}
-
+     
+    @Test
+    public void addQuestion() throws JSONException {
+    	
+    	String url = "http://localhost:" + port + "/surveys/Survey1/questions";
+    	
+    	TestRestTemplate restTemplate = new TestRestTemplate();
+    	
+    	HttpHeaders headers = new HttpHeaders();
+    	headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+       
+    	Question question = new Question("DOESNTMATTER",
+				"Question1", "Russia", Arrays.asList(
+						"India", "Russia", "United States", "China"));
+    	
+    	
+    	HttpEntity entity = new HttpEntity<Question>(question, headers);
+      
+    	ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entity,String.class);
+        
+    	String actual = response.getHeaders().get(HttpHeaders.LOCATION).get(0);        
+        
+    	System.out.println(actual);
+  
+         assertTrue(actual.contains("/surveys/Survey1/questions"));
+  //      assertTrue(response.getBody().contains("\"description\":\"Largest Country in the World\""));
+  //      String expected = "{id:Question1,description:\"Largest Country in the World\",correctAnswer:Russia}";
+     
+ //       JSONAssert.assertEquals(expected, response.getBody(), false);
+    } 
     
 }
