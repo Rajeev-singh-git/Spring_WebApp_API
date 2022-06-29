@@ -216,6 +216,15 @@ Step 19
    
  Step 20: Spring Boot Starter : Introduction to Spring Data Rest
  
-   Url = http://localhost:8080/users/
+    Url = http://localhost:8080/users/
     http://localhost:8080/users/search/findByRole?role=Admin
+    
+ Step 23 + 24:
+  
+  @ComponentScan("com.in28minutes") annotation has been removed 
+  to run unit test "SurveyControllerTest.java" however it is creating problem 
+  for Integration  test "SurveyControllerIT.java". Again after adding that
+  "SurveyControllerTest.java" is working fine.
+  
+  Why it is happening, find out and resolve this.
   
