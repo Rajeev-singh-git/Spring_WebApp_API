@@ -228,3 +228,7 @@ Step 19
   
   Why it is happening, find out and resolve this.
   
+  
+  Step 25:
+    Added @ComponentScan("com.in28minutes") annotation  again to
+     run java app in  "Applicaton.java"

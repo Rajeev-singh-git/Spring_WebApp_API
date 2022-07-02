@@ -59,7 +59,6 @@ public class SurveyControllerIT {
         JSONAssert.assertEquals(expected, response.getBody(), false);
     } 
 
-    //Response : {"id":"Question1","description":"Largest Country in the World","correctAnswer":"Russia","options":["India","Russia","United States","China"]}
      
     @Test
     public void addQuestion() throws JSONException {
