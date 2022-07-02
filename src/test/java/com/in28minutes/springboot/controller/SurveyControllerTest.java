@@ -65,7 +65,7 @@ public class SurveyControllerTest {
     		Question mockQuestion = new Question("1", "Smallest Number", "1",
 				Arrays.asList("1", "2", "3", "4"));
 
-		String questionJso = "{\"description\":\"Smallest Number\",\"correctAnswer\":\"1\",\"options\":[\"1\",\"2\",\"3\",\"4\"]}";
+		String questionJson = "{\"description\":\"Smallest Number\",\"correctAnswer\":\"1\",\"options\":[\"1\",\"2\",\"3\",\"4\"]}";
 		//surveyService.addQuestion to respond back with mockQuestion
 		Mockito.when(
 				surveyService.addQuestion(Mockito.anyString(), Mockito

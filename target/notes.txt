@@ -231,4 +231,9 @@ Step 19
   
   Step 25:
     Added @ComponentScan("com.in28minutes") annotation  again to
-     run java app in  "Applicaton.java"
+    run java app in  "Applicaton.java"
+     
+Step 26: Securing our services with Basic Authentication using Spring Security
+
+Default user name is  = user
+Password is = you can see in logs
