@@ -237,3 +237,10 @@ Step 26: Securing our services with Basic Authentication using Spring Security
 
 Default user name is  = user
 Password is = you can see in logs
+
+
+Step 27:
+
+	Configure different user roles for survey and other services
+	Update integration tests
+	Update unit tests
