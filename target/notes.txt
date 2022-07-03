@@ -244,3 +244,10 @@ Step 27:
 	Configure different user roles for survey and other services
 	Update integration tests
 	Update unit tests
+	
+	
+Step 27.2
+   
+    Disabled spring security in unit test by using "@WithMockUser"
+    annotation in "SurveyControllerTest.java"
+    Spring Security is enabled  for testing in "SurveyControllerIT.java"
